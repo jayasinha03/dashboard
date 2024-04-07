@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  h1{
+    margin: 30px;
+    text-align: center;
+  }
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: rgb(196, 154, 220);
+    text-align: center;
+    margin: 12px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+
+  .date{
+    color:rgb(32, 2, 33);
+    margin: 50px;
+    font-size:30px;
+  }
+   
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+   
+  .todo-form {
+    margin-bottom: 32px;
+  }
+   
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #2f0741;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #080000;
+  }
+   
+  .todo-input::placeholder {
+    color: #0c0101;
+  }
+   
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(33, 4, 39) 0%,
+      rgb(46, 5, 71) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
+   
+  .todo-input.edit {
+    border: 2px solid #2f0741;
+  }
+   
+  .todo-button.edit {
+    background: linear-gradient(
+      90deg,
+      rgb(33, 4, 39) 0%,
+      rgb(46, 5, 71) 100%
+    );
+    padding: 16px 22px;
+  }
+   
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+   
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #f2ecec;
+    background:rgb(59, 5, 66) 100%;
+   
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+   
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+   
+  .delete-icon {
+    margin-right: 5px;
+    color: #fff;
+  }
+   
+  .edit-icon {
+    color: #fff;
+  }
